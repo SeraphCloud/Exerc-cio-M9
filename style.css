@@ -1,0 +1,109 @@
+/* style.css */
+:root {
+    --color-bg-start: #6fc4da;
+    --color-bg-end: #092379;
+    --color-header: rgba(32,173,155, 0.9);
+    --color-form: rgba(111,196,218, 0.8); 
+}
+
+* {
+    font-family: "Baskervville SC", serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    background: linear-gradient(25deg, var(--color-bg-start) 0%, var(--color-bg-end) 100%);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+header {
+    background-color: var(--color-header);
+    padding: 16px 0;
+    color: #fff;
+    display: flex;
+    border-bottom: 4px solid #1a8daa;
+    justify-content: center;
+    text-transform: uppercase;
+    font-style: italic;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+header button {
+    margin-left: 16px;
+    background-color: #1a8daa;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+    font-size: 24px;
+}
+
+header button:hover {
+    background-color: #136f75;
+}
+
+form {
+    background-color: var(--color-form);
+    padding: 24px 0;
+    text-align: center;
+    display: none;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+form button {
+    margin-left: 8px;
+    background-color: #1a8daa;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+}
+
+form button:hover {
+    background-color: #136f75;
+}
+
+ul li {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 8px 0;
+    padding: 8px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    text-align: center;
+    color: #333;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    header button {
+        margin: 5px 0;
+        padding: 6px 12px;
+        margin-right: 8px;
+    }
+    
+    form {
+        padding: 20px 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    ul li {
+        padding: 6px;
+    }
+}
