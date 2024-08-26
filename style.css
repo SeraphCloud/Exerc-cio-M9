@@ -107,3 +107,7 @@ ul li {
         padding: 6px;
     }
 }
+
+.riscada {
+    text-decoration: line-through;
+}

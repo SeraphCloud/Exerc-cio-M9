@@ -2,6 +2,9 @@ $(document).ready(function(){
     $('header button').on('click',function() {
         $('form').slideDown();
     })
+    $('ul').on('click', 'li', function() {
+        $(this).toggleClass('riscada');
+    })
 })
 
 $('#botao-limpar').on('click',function() {
